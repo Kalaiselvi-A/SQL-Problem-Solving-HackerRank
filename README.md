@@ -38,13 +38,12 @@ Each problem is documented in a separate markdown file for clarity.
 ## How solutions are presented
 
 Every solution includes:
-- The problem title and official HackerRank link
-- A brief explanation of the problem
-- The SQL query written in a clean and readable format
-- A logical explanation of how the query works
-- An output screenshot for reference
+- The **problem title** along with the official **HackerRank problem link**
+- A **brief explanation** of the problem statement
+- The **SQL query**, written in a clean and readable format
+- A **logical explanation** describing how the query works
 
-The explanations are written in simple language to make revision easy.
+The explanations are written in **simple and clear language** to ensure better understanding and to make SQL revision efficient.
 
 ---
 
