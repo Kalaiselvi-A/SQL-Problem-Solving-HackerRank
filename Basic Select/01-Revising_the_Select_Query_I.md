@@ -42,6 +42,6 @@ WHERE COUNTRYCODE = 'USA'
 ---
 
 ### Key Learning
->Combining multiple conditions using the `WHERE` clause improves data filtering accuracy.
+>_Combining multiple conditions using the `WHERE` clause improves data filtering accuracy._
 
 ---
