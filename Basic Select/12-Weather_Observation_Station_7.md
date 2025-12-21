@@ -37,6 +37,7 @@ WHERE CITY REGEXP '[AEIOUaeiou]$';
 #### Regex breakdown:
 - `[AEIOUaeiou]` → Matches any vowel (uppercase or lowercase)
 - `$` → Ensures the match occurs at the end of the string
+
   This guarantees that only cities **ending with a vowel** are selected.
 
 ---
