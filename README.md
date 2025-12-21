@@ -75,4 +75,4 @@ The focus is on consistency and clarity rather than quantity.
 
 ---
 
-Thank you for visiting this repository.
+Thank you for visiting this repository. Happy Learning 🚀
