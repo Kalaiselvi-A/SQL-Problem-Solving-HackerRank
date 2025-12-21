@@ -71,7 +71,7 @@ The focus is on consistency and clarity rather than quantity.
 ## Connect with me
 
 - LinkedIn: https://www.linkedin.com/in/kalaiselvia/
-- GitHub: Kalaiselvi-A
+- GitHub: Kalaiselvi-A[https://github.com/Kalaiselvi-A]
 
 ---
 
