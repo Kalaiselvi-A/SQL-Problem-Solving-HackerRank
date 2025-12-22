@@ -51,6 +51,6 @@ FROM TRIANGLES;
 ---
 
 ### Key Learning
-> _The `CASE` statement enables conditional logic in SQL, and ordering conditions correctly is crucial when multiple rules must be evaluated._
+> _The `CASE` statement enables conditional logic in SQL, and **ordering** conditions correctly is crucial when multiple rules must be evaluated._
 
 ---
