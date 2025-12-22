@@ -61,7 +61,7 @@ WHERE LOWER(LEFT(CITY,1)) NOT IN ('a','e','i','o','u')
 - `LEFT(CITY, 1)` → gets the **first character**
 - `RIGHT(CITY, 1)` → gets the **last character**
 - `LOWER()` → handles case-insensitive comparison
-- `NOT IN` ('a','e','i','o','u') → filters out vowels
+- `NOT IN ('a','e','i','o','u')` → filters out vowels
 - `OR` → selects cities that fail **either** condition
 - `DISTINCT` → removes duplicate city names
 
