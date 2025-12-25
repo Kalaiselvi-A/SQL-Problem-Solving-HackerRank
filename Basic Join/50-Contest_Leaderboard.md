@@ -32,55 +32,77 @@ The **total score of a hacker** is defined as:
 ### SQL Query (MySQL)
 
 ```sql
-WITH MaxScores AS (
+SELECT
+    h.hacker_id,
+    h.name,
+    SUM(ms.max_score) AS total_score
+FROM Hackers h
+JOIN (
     SELECT
         hacker_id,
         challenge_id,
         MAX(score) AS max_score
     FROM Submissions
     GROUP BY hacker_id, challenge_id
-)
-SELECT
-    H.hacker_id,
-    H.name,
-    SUM(M.max_score) AS total_score
-FROM Hackers H
-JOIN MaxScores M
-    ON H.hacker_id = M.hacker_id
-GROUP BY H.hacker_id, H.name
-HAVING SUM(M.max_score) > 0
-ORDER BY total_score DESC, H.hacker_id ASC;
+) ms
+ON h.hacker_id = ms.hacker_id
+GROUP BY h.hacker_id, h.name
+HAVING SUM(ms.max_score) > 0
+ORDER BY total_score DESC, h.hacker_id ASC;
 ```
 
 ---
 
 ### Explanation 
-- **CTE** `MaxScores`
+- **Find best score per challenge**
     ```
-    SELECT hacker_id, challenge_id, MAX(score)
+      MAX(score)
+    ```
+  - A hacker may submit many times.
+  - Only the **highest score per challenge** is taken.
+- **Subquery**
+    ```
     FROM Submissions
     GROUP BY hacker_id, challenge_id
     ```
-  - Ensures **only the highest score per challenge** is considered for each hacker.
-- **Join with Hackers**
+  - Groups submissions by hacker and challenge.
+  - Prevents counting multiple submissions for the same challenge.
+- **Join with Hackers table**
     ```
-    JOIN Hackers H
-      ON H.hacker_id = M.hacker_id
+    JOIN Hackers h ON h.hacker_id = ms.hacker_id
     ```
-  - Retrieves the hacker’s name for final output.
-- **Calculate Total Score** `SUM(M.max_score)`
-  - Adds maximum scores across all challenges attempted by the hacker.
-- **Exclude Zero Scores** `HAVING SUM(M.max_score) > 0`
-  - Removes hackers who never earned any points.
-- **Sorting** `ORDER BY total_score DESC, hacker_id ASC`
-  - Matches HackerRank’s required ordering.
-
+  - Fetches the hacker’s name along with scores.
+- **Calculate total score**
+    ```
+    SUM(ms.max_score)
+    ```
+  - Adds all maximum challenge scores for each hacker.
+- **GROUP BY**
+    ```
+    GROUP BY h.hacker_id, h.name
+    ```
+  - Ensures one row per hacker.
+- **HAVING clause**
+    ```
+    HAVING SUM(ms.max_score) > 0
+    ```
+  - Removes hackers with **zero total score.**
+  - `HAVING` is used because filtering is done after aggregation.
+- **ORDER BY**
+    ```
+    ORDER BY total_score DESC, h.hacker_id ASC
+    ```
+  - Highest score first.
+  - If scores are equal, smaller `hacker_id` comes first.
+  
 ---
 
 ### Key Learning
->- _Use `MAX(score)` to avoid counting multiple submissions for the same challenge._
->- _CTEs make complex leaderboard logic easier to read and debug._
->- _`HAVING` filters aggregated results after `GROUP BY`._
->- _Always re-check sorting conditions in HackerRank problems._
+>- _Use `MAX()` to select the best attempt when multiple submissions exist._
+>- _Apply **proper** `GROUP BY` to avoid double counting._
+>- _Prefer **subqueries over CTEs** in HackerRank MySQL._
+>- _Use `HAVING` for filtering aggregated results._
+>- _**Join tables** to enrich results with descriptive data._
+>- _Apply **correct ordering** to handle ties accurately._
 
 ---
