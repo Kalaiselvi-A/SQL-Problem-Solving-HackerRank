@@ -6,6 +6,15 @@ The intention of maintaining this repository is to document my approach to solvi
 
 ---
 
+## 🏆 Achievements
+
+I have earned the **HackerRank Gold Badge** for SQL proficiency:  
+
+[![HackerRank Gold](https://img.shields.io/badge/HackerRank-Gold-FFD700?style=for-the-badge&logo=HackerRank&logoColor=white)](https://www.hackerrank.com/profile/_kalai_2004)
+*Click the badge to view my HackerRank profile.*
+
+---
+
 ## About this work
 
 SQL is a core skill for many software and data-related roles. While practicing problems on HackerRank, I felt the need to maintain a structured record of my solutions along with explanations that reflect real understanding.
@@ -23,12 +32,12 @@ This repository serves as:
 Problems are grouped based on their category:
 
 >SQL-Problem-Solving-HackerRank\
-├── Basic Select/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_# Simple SELECT queries to get started_\
-├── Advanced Select/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_# Complex SELECT queries with conditions_\
-├── Aggregation/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _# Queries using GROUP BY, COUNT, SUM, AVG, etc._\
-├── Basic Join/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _# Simple JOIN operations between tables_\
-├── Advanced Join/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _# Complex JOIN queries with multiple tables_\
-├── Alternative Queries/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _# Different ways to solve the same problem_\
+├── Basic Select/ [01-20]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_# Simple SELECT queries to get started_\
+├── Advanced Select/ [21-25]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_# Complex SELECT queries with conditions_\
+├── Aggregation/ [26-42]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _# Queries using GROUP BY, COUNT, SUM, AVG, etc._\
+├── Basic Join/ [43-50]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _# Simple JOIN operations between tables_\
+├── Advanced Join/ [51-55]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _# Complex JOIN queries with multiple tables_\
+├── Alternative Queries/ [56-58]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _# Different ways to solve the same problem_\
 └── README.md&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _# This documentation file_
 
 Each problem is documented in a separate markdown file for clarity.
