@@ -6,15 +6,6 @@ The intention of maintaining this repository is to document my approach to solvi
 
 ---
 
-## 🏆 Achievements
-
-I have earned the **HackerRank Gold Badge** for SQL proficiency:  
-
-[![HackerRank Gold](https://img.shields.io/badge/HackerRank-Gold-FFD700?style=for-the-badge&logo=HackerRank&logoColor=white)](https://www.hackerrank.com/profile/_kalai_2004)
-*Click the badge to view my HackerRank profile.*
-
----
-
 ## About this work
 
 SQL is a core skill for many software and data-related roles. While practicing problems on HackerRank, I felt the need to maintain a structured record of my solutions along with explanations that reflect real understanding.
@@ -76,10 +67,19 @@ The focus is on consistency and clarity rather than quantity.
 
 ---
 
+## 🏆 Achievements
+
+I have earned the **HackerRank Gold Badge** for SQL proficiency:  
+
+[![HackerRank Gold](https://img.shields.io/badge/HackerRank-Gold-FFD700?style=for-the-badge&logo=HackerRank&logoColor=white)](https://www.hackerrank.com/profile/_kalai_2004)
+*Click the badge to view my HackerRank profile.*
+
+---
+
 ## Connect with me
 
 - LinkedIn: https://www.linkedin.com/in/kalaiselvia/
-- GitHub: Kalaiselvi-A[https://github.com/Kalaiselvi-A]
+- GitHub: [Kalaiselvi-A](https://github.com/Kalaiselvi-A)
 
 ---
 
